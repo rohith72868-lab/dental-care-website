@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Dental Appointment | BrightBite Dental Clinic</title>
+  <meta name="description" content="Schedule your appointment at BrightBite Dental Clinic online. Select your preferred treatment, dentist, date, and time slot in 60 seconds.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="BrightBite Dental Clinic Home">
+        <div class="brand-icon-box">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.5 2 6 4.5 6 7.5C6 9.8 7.2 12.3 8.1 14.8C9.1 17.5 9.7 20.3 10.4 22C10.7 22.7 11.6 22.7 11.9 22C12.3 21 12.7 19.3 13 18C13.2 17 13.8 17 14 18C14.3 19.3 14.7 21 15.1 22C15.4 22.7 16.3 22.7 16.6 22C17.3 20.3 17.9 17.5 18.9 14.8C19.8 12.3 21 9.8 21 7.5C21 4.5 18.5 2 15 2C13.5 2 12.6 2.8 12 3.2C11.4 2.8 10.5 2 12 2Z"></path></svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">BrightBite</span>
+          <span class="brand-tag">DENTAL CLINIC</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <div class="nav-item"><a href="index.html" class="nav-link">Home</a></div>
+        <div class="nav-item"><a href="services.html" class="nav-link">Services</a></div>
+        <div class="nav-item"><a href="about.html" class="nav-link">About</a></div>
+        <div class="nav-item"><a href="doctors.html" class="nav-link">Doctors</a></div>
+        <div class="nav-item"><a href="technology.html" class="nav-link">Technology</a></div>
+        <div class="nav-item"><a href="blog.html" class="nav-link">Blog</a></div>
+        <div class="nav-item"><a href="contact.html" class="nav-link">Contact</a></div>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:8004567890" class="btn btn-secondary">
+          <span>Call (800) 456-7890</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section style="background:var(--mint-ultralight); padding:60px 0; border-bottom:1px solid var(--neutral-200);">
+      <div class="container" style="text-align:center;">
+        <div class="eyebrow-badge">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          <span>ONLINE APPOINTMENT PORTAL</span>
+        </div>
+        <h1 class="heading-serif" style="font-size:3.5rem; margin-bottom:14px;">Schedule Your Dental Visit</h1>
+        <p style="max-width:620px; margin:0 auto; font-size:1.1rem; color:var(--text-secondary);">
+          Reserve your consultation in under a minute. Our concierge desk will confirm your appointment via SMS and WhatsApp.
+        </p>
+      </div>
+    </section>
+
+    <!-- Booking Form Card -->
+    <section style="padding:80px 0; background:var(--neutral-50);">
+      <div class="container" style="max-width:860px;">
+        <div class="booking-form-wrapper" style="box-shadow:var(--shadow-floating);">
+          
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:30px; padding-bottom:20px; border-bottom:1px solid var(--neutral-200);">
+            <div>
+              <h3 class="heading-serif" style="font-size:1.8rem;">Patient Booking Details</h3>
+              <p style="font-size:0.88rem; color:var(--text-secondary);">New & Returning Patients Welcome</p>
+            </div>
+            <a href="https://wa.me/18004567890?text=Hi%2C%20I'd%20like%20to%20book%20a%20dental%20appointment." target="_blank" rel="noopener" class="btn btn-whatsapp" style="padding:10px 18px; font-size:0.86rem;">
+              <span>Fast WhatsApp Booking</span>
+            </a>
+          </div>
+
+          <form class="appointment-form" id="dedicatedBookingForm">
+            <!-- Select Service & Doctor -->
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label" for="bookTreatment">Treatment Required *</label>
+                <select id="bookTreatment" name="treatment" class="form-control" required>
+                  <option value="" disabled selected>Select treatment...</option>
+                  <option value="General Dentistry & Cleaning">General Dentistry & Cleaning</option>
+                  <option value="Dental Implants Consultation">Dental Implants Consultation</option>
+                  <option value="Teeth Whitening">Teeth Whitening (Zoom! Laser)</option>
+                  <option value="Clear Aligners / Invisalign">Clear Aligners / Invisalign</option>
+                  <option value="Root Canal Treatment">Root Canal Treatment (Emergency/Pain)</option>
+                  <option value="Pediatric Dental Visit">Pediatric Dental Visit (Kids)</option>
+                  <option value="Crowns & Bridges">Crowns & Bridges</option>
+                  <option value="Cosmetic Smile Makeover">Cosmetic Smile Makeover</option>
+                  <option value="Emergency Toothache Relief">Emergency Toothache Relief</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="bookDoctor">Preferred Doctor</label>
+                <select id="bookDoctor" name="doctor" class="form-control">
+                  <option value="First Available Specialist" selected>First Available Specialist</option>
+                  <option value="Dr. Elena Vance (Chief Dentist)">Dr. Elena Vance (Chief Dentist - Implants & Aesthetics)</option>
+                  <option value="Dr. Marcus Chen (Orthodontist)">Dr. Marcus Chen (Orthodontics & Aligners)</option>
+                  <option value="Dr. Sarah Jenkins (Pediatric)">Dr. Sarah Jenkins (Pediatric Dentistry)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Date & Time -->
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label" for="bookDate">Preferred Date *</label>
+                <input type="date" id="bookDate" name="date" class="form-control" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="bookTime">Preferred Time Slot *</label>
+                <select id="bookTime" name="time" class="form-control" required>
+                  <option value="Morning (9:00 AM – 12:00 PM)">Morning (9:00 AM – 12:00 PM)</option>
+                  <option value="Afternoon (12:00 PM – 4:00 PM)">Afternoon (12:00 PM – 4:00 PM)</option>
+                  <option value="Evening (4:00 PM – 8:00 PM)">Evening (4:00 PM – 8:00 PM)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Patient Info -->
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label" for="bookName">Full Name *</label>
+                <input type="text" id="bookName" name="fullname" class="form-control" required placeholder="Eleanor Davis">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="bookPhone">Phone Number *</label>
+                <input type="tel" id="bookPhone" name="phone" class="form-control" required placeholder="(800) 456-7890">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="bookEmail">Email Address (For Calendar Invite & Confirmation)</label>
+              <input type="email" id="bookEmail" name="email" class="form-control" placeholder="eleanor@example.com">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="bookMessage">Dental Symptoms or Special Notes (Optional)</label>
+              <textarea id="bookMessage" name="message" class="form-control" rows="3" placeholder="Tell us about any specific tooth sensitivity, previous dental anxiety, or questions..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%; padding:16px; font-size:1.05rem;">
+              <span>Confirm & Request Appointment</span>
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Confirmation Modal -->
+  <div class="modal-overlay" id="confirmationModal">
+    <div class="modal-dialog" style="text-align:center; max-width:540px;">
+      <button class="modal-close-btn close-confirm-modal" aria-label="Close Confirmation Modal">✕</button>
+
+      <div style="width:70px; height:70px; border-radius:50%; background:var(--mint-soft); color:var(--primary-teal); display:flex; align-items:center; justify-content:center; margin:0 auto 20px;">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+
+      <span class="eyebrow-badge badge-mint">Appointment Requested!</span>
+      <h3 class="heading-serif" style="font-size:2rem; margin-top:8px;">Thank You, <span class="confirm-patient-name">Patient</span>!</h3>
+      <p style="color:var(--text-secondary); margin-bottom:20px;">Our clinic care team has received your appointment request and will contact you shortly to confirm your booking.</p>
+
+      <div style="background:var(--neutral-50); border:1px solid var(--neutral-200); border-radius:var(--radius-md); padding:20px; text-align:left; margin-bottom:24px;">
+        <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-size:0.85rem; color:var(--text-muted);">
+          <span>Reference Number:</span>
+          <strong class="confirm-ref-code" style="color:var(--primary-teal); font-size:1rem;">BB-8492</strong>
+        </div>
+        <div class="confirm-details" style="font-size:0.92rem; color:var(--text-primary); line-height:1.6;"></div>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:10px;">
+        <a href="#" target="_blank" rel="noopener" class="btn btn-whatsapp confirm-wa-btn">
+          <span>Confirm Instantly via WhatsApp</span>
+        </a>
+        <button class="btn btn-outline close-confirm-modal">Back to Home</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>© 2026 BrightBite Dental Clinic. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
